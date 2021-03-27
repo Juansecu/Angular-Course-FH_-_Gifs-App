@@ -1,0 +1,19 @@
+<div class="row">
+  <div
+    *ngFor="let result of results"
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__fast"
+  >
+    <div class="card">
+      <img
+        [src]="result.images.downsized_large.url"
+        [alt]="result.title"
+        class="card-img-top"
+      >
+      <div class="card-body">
+        <p class="card-text">
+          {{ result.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
